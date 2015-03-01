@@ -1,8 +1,11 @@
 <html>
     <head>
+    	{% if title %}
         <title>{{ title }} - Kushal's Blog </title>
+    	{% else %}
     </head>
-
+    	<title>Welcome to My blog </title>
+    	{% endif %}
     <body>
         <h1> Hello, {{user.nickname}} </h1>
     </body>
